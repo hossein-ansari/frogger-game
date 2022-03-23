@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+
+}
+.map{
+    width: 402px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+
+    border:1px solid red; 
+    margin: 0 auto;
+    border-style: outset;
+}
+.square{
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid black;
+}

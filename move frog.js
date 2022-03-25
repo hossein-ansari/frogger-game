@@ -10,10 +10,9 @@ function movefrog(e) {
   square[99].classList.remove("frog");
   switch (e.key) {
     case "ArrowUp":
-        if (frog > 10) {
-            
-            frog -= movehight;
-        }
+      if (frog > 10) {
+        frog -= movehight;
+      }
       break;
     case "ArrowLeft":
       if (frog > 0) {
@@ -21,18 +20,16 @@ function movefrog(e) {
       }
       break;
     case "ArrowDown":
-        if (frog < 90) {
-            frog += movehight;
-        }
-      
+      if (frog < 90) {
+        frog += movehight;
+      }
+
       break;
     case "ArrowRight":
-        if (frog < 99) {
-            
-            frog += 1;
-        }
+      if (frog < 99) {
+        frog += 1;
+      }
       break;
-
   }
   square[frog].classList.add("frog");
 }

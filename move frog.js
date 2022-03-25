@@ -2,10 +2,12 @@ let $ = document;
 let map = $.querySelector(".map");
 let square = $.querySelectorAll(".square");
 let rows = $.querySelectorAll(".rows div");
-let frog = 89;
+let frog = 99;
 let movehight = 10;
+square[99].classList.add("frog");
 function movefrog(e) {
   square[frog].classList.remove("frog");
+  square[99].classList.remove("frog");
   switch (e.key) {
     case "ArrowUp":
         if (frog > 10) {

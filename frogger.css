@@ -5,13 +5,13 @@
 
 }
 .map{
-    width: 402px;
-    height: 400px;
+    width: 202px;
+    height: 200px;
     display: flex;
     flex-wrap: wrap;
-
+    
     border:1px solid red; 
-    margin: 0 auto;
+    margin: auto auto;
     border-style: outset;
 }
 .square{
@@ -23,4 +23,7 @@
 .rows{
     display: flex;
 
+}
+.frog{
+    background-color: green;
 }

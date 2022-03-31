@@ -15,17 +15,11 @@ let random6 = Math.floor(randomNumber(60, 69));
 let random7 = Math.floor(randomNumber(70, 79));
 let random8 = Math.floor(randomNumber(80, 89));
 let random9 = Math.floor(randomNumber(90, 99));
+
 //  code 
 // cheke for lose or win and make Barrier 
 function Barrier() {  
-  if (square[frog].classList.contains("Barrier")) {
-    square[frog].classList.remove("frog");
-    alert("game over");
-    history.go(0);
-  } else if (square[frog].classList.contains("win")) {
-    alert('your win')
-    history.go(0);
-  }
+
   // barriers 
   function randomOne() {
     if (random1 < 19) {
@@ -140,5 +134,7 @@ function Barrier() {
   randomEighit();
   randomNine();
 
+
 }
+
 setInterval(Barrier, 650);

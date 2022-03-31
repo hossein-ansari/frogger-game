@@ -34,5 +34,13 @@ function movefrog(e) {
       break;
   }
   square[frog].classList.add("frog");
+  if (square[frog].classList.contains("Barrier")) {
+    square[frog].classList.remove("frog");
+    alert("game over");
+    history.go(0);
+  } else if (square[frog].classList.contains("win")) {
+    alert('your win')
+    history.go(0);
+  }
 }
 window.addEventListener("keyup", movefrog);

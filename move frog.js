@@ -6,7 +6,9 @@ let rows = $.querySelectorAll(".rows div");
 let frog = 99;
 let movehight = 10;
 square[99].classList.add("frog");
+
 function movefrog(e) {
+  
   square[frog].classList.remove("frog");
   square[99].classList.remove("frog");
 //  move frog 
@@ -34,13 +36,6 @@ function movefrog(e) {
       break;
   }
   square[frog].classList.add("frog");
-  if (square[frog].classList.contains("Barrier")) {
-    square[frog].classList.remove("frog");
-    alert("game over");
-    history.go(0);
-  } else if (square[frog].classList.contains("win")) {
-    alert('your win')
-    history.go(0);
-  }
+  
 }
 window.addEventListener("keyup", movefrog);

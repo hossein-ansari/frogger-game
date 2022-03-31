@@ -134,7 +134,15 @@ function Barrier() {
   randomEighit();
   randomNine();
 
-
 }
-
+setInterval(() => {
+  if (square[frog].classList.contains("Barrier")) {
+    square[frog].classList.remove("frog");
+    history.go(0);
+    alert("game over");
+  } else if (square[frog].classList.contains("win")) {
+    history.go(0);
+    alert('your win')
+  }
+}, 10);
 setInterval(Barrier, 650);

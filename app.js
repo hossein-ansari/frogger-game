@@ -20,7 +20,7 @@ function Barrier() {
       square[random1].classList.remove("Barrier");
       random1++;
       square[random1].classList.add("Barrier");
-    } else{
+    } else {
       square[random1].classList.remove("Barrier");
       random1 -= 10;
     }
@@ -30,7 +30,7 @@ function Barrier() {
       square[random2].classList.remove("Barrier");
       random2++;
       square[random2].classList.add("Barrier");
-    } else{
+    } else {
       square[random2].classList.remove("Barrier");
       random2 -= 10;
     }
@@ -43,11 +43,10 @@ function Barrier() {
       random3_2++;
       square[random3].classList.add("Barrier");
       square[random3_2].classList.add("Barrier");
-
-    } else{
+    } else {
       square[random3].classList.remove("Barrier");
       square[random3_2].classList.remove("Barrier");
-      random3_2 -= 10
+      random3_2 -= 10;
       random3 -= 10;
     }
   }
@@ -56,7 +55,7 @@ function Barrier() {
       square[random4].classList.remove("Barrier");
       random4++;
       square[random4].classList.add("Barrier");
-    } else{
+    } else {
       square[random4].classList.remove("Barrier");
       random4 -= 10;
     }
@@ -71,11 +70,10 @@ function Barrier() {
 
       square[random5].classList.add("Barrier");
       square[random5_2].classList.add("Barrier");
-
-    } else{
+    } else {
       square[random5].classList.remove("Barrier");
       square[random5_2].classList.remove("Barrier");
-      random5_2 -= 10
+      random5_2 -= 10;
       random5 -= 10;
     }
   }
@@ -84,7 +82,7 @@ function Barrier() {
       square[random6].classList.remove("Barrier");
       random6++;
       square[random6].classList.add("Barrier");
-    } else{
+    } else {
       square[random6].classList.remove("Barrier");
       random6 -= 10;
     }
@@ -94,7 +92,7 @@ function Barrier() {
       square[random7].classList.remove("Barrier");
       random7++;
       square[random7].classList.add("Barrier");
-    } else{
+    } else {
       square[random7].classList.remove("Barrier");
       random7 -= 10;
     }
@@ -104,7 +102,7 @@ function Barrier() {
       square[random8].classList.remove("Barrier");
       random8++;
       square[random8].classList.add("Barrier");
-    } else{
+    } else {
       square[random8].classList.remove("Barrier");
       random8 -= 10;
     }
@@ -114,21 +112,27 @@ function Barrier() {
       square[random9].classList.remove("Barrier");
       random9++;
       square[random9].classList.add("Barrier");
-    } else{
+    } else {
       square[random9].classList.remove("Barrier");
       random9 -= 10;
     }
   }
 
-  randomOne()
-  randomTwo()
-  randomThree()
-  randomFour()
-  randomFive()
-  randomSix()
-  randomSeven()
-  randomEighit()
-  randomNine()
-  
+  randomOne();
+  randomTwo();
+  randomThree();
+  randomFour();
+  randomFive();
+  randomSix();
+  randomSeven();
+  randomEighit();
+  randomNine();
+  if (square[frog].classList.contains("Barrier")) {
+    square[frog].classList.remove("frog");
+    alert("game over");
+    history.go(0);
+  } else if (square[frog].classList.contains("Barrier")) {
+    
+  }
 }
 setInterval(Barrier, 650);
